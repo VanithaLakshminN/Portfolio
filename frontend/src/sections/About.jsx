@@ -6,7 +6,7 @@ const About = () => {
     <section id="about" className="min-h-screen flex flex-col justify-center pt-20">
       <motion.div initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.8 }}>
         <p className="text-accent mb-4">Hi, my name is</p>
-        <h1 className="text-5xl md:text-7xl font-bold text-white mb-4">Vanitha Lakshmin N.</h1>
+        <h1 className="text-5xl md:text-7xl font-bold text-white mb-4">Vanitha Lakshmin N</h1>
         <h2 className="text-3xl md:text-5xl font-bold text-slate-400 mb-6">
           I am a{' '}
           <span className="text-accent">
