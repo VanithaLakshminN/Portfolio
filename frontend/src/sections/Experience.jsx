@@ -21,10 +21,10 @@ const Experience = () => {
             </p>
           </div>
           <div className="bg-slate-800/50 p-6 rounded-lg">
-            <h3 className="text-2xl font-semibold text-accent mb-2">Software Development Internship</h3>
+            <h3 className="text-2xl font-semibold text-accent mb-2">Full Stack Development Internship</h3>
             <p className="text-slate-400 mb-4">TAP Academy (Ongoing)</p>
             <p className="text-slate-300">
-              Currently developing software solutions and enhancing programming skills through practical hands-on projects.
+              Currently working on full stack web development projects, building end-to-end solutions using modern frontend and backend technologies.
             </p>
           </div>
         </div>
