@@ -1,7 +1,7 @@
 import { motion } from 'framer-motion';
 
 const Achievements = () => {
-  const awards = ["SIH Hackathon Internal College Level 2nd Runner Up", "Deloitte Data Analytics Certificate", "EY Microsoft AI Skills Passport"];
+  const awards = ["SIH COllege level 3rd winner", "Deloitte Data Analytics Certificate", "EY Microsoft AI Skills Passport"];
 
   return (
     <section id="achievements" className="py-20">
