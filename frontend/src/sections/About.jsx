@@ -1,9 +1,26 @@
 import { motion } from 'framer-motion';
 import { Typewriter } from 'react-simple-typewriter';
+import { useContext } from 'react';
+import { ThemeContext } from '../context/ThemeContext';
 
 const About = () => {
+  const { isDark } = useContext(ThemeContext);
+  
+  const bgStyle = {
+    backgroundImage: `
+      linear-gradient(135deg, ${isDark ? 'rgba(15, 23, 42, 0.85)' : 'rgba(255, 255, 255, 0.9)'} 0%, ${isDark ? 'rgba(30, 41, 59, 0.85)' : 'rgba(241, 245, 249, 0.9)'} 100%),
+      url('data:image/svg+xml,%3Csvg width="60" height="60" viewBox="0 0 60 60" xmlns="http://www.w3.org/2000/svg"%3E%3Cg fill="none" fill-rule="evenodd"%3E%3Cg fill="%23${isDark ? '334155' : 'e2e8f0'}' fill-opacity="0.3"%3E%3Cpath d="M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z"/%3E%3C/g%3E%3C/g%3E%3C/svg%3E')
+    `,
+    backgroundSize: '100%, 60px 60px',
+    backgroundAttachment: 'fixed'
+  };
+
   return (
-    <section id="about" className="min-h-screen flex flex-col justify-center pt-20">
+    <section 
+      id="about" 
+      className="min-h-screen flex flex-col justify-center pt-20 relative"
+      style={bgStyle}
+    >
       <motion.div initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.8 }}>
         <p className="text-accent mb-4">Hi, my name is</p>
         <h1 className="text-5xl md:text-7xl font-bold text-white mb-4">Vanitha Lakshmin N</h1>
