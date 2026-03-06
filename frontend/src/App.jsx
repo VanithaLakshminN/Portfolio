@@ -1,3 +1,4 @@
+import { useContext } from 'react';
 import Navbar from './components/Navbar';
 import About from './sections/About';
 import Experience from './sections/Experience';
@@ -6,10 +7,13 @@ import Skills from './sections/Skills';
 import Projects from './sections/Projects';
 import Achievements from './sections/Achievements';
 import Contact from './sections/Contact';
+import { ThemeContext } from './context/ThemeContext';
 
 function App() {
+  const { isDark } = useContext(ThemeContext);
+
   return (
-    <div className="relative min-h-screen bg-darkBg text-slate-100">
+    <div className={`relative min-h-screen transition-colors ${isDark ? 'bg-darkBg text-slate-100' : 'bg-white text-slate-900'}`}>
       <Navbar />
       <main className="px-6 md:px-24">
         <About />
