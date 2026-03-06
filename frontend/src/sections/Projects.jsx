@@ -10,7 +10,7 @@ const Projects = () => {
       github: 'https://github.com/VanithaLakshminN/GreenPath'
     },
     {
-      title: 'Developer Portfolio',
+      title: 'My Portfolio',
       desc: 'A modern, fully responsive personal portfolio featuring smooth scroll animations and a connected contact database.',
       tech: ['React', 'Vite', 'Tailwind CSS', 'Framer Motion'],
       github: 'https://github.com/VanithaLakshminN/MyPortfolio'
