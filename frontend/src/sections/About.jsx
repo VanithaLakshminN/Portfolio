@@ -8,11 +8,13 @@ const About = () => {
   
   const bgStyle = {
     backgroundImage: `
-      linear-gradient(135deg, ${isDark ? 'rgba(15, 23, 42, 0.85)' : 'rgba(255, 255, 255, 0.9)'} 0%, ${isDark ? 'rgba(30, 41, 59, 0.85)' : 'rgba(241, 245, 249, 0.9)'} 100%),
-      url('data:image/svg+xml,%3Csvg width="60" height="60" viewBox="0 0 60 60" xmlns="http://www.w3.org/2000/svg"%3E%3Cg fill="none" fill-rule="evenodd"%3E%3Cg fill="%23${isDark ? '334155' : 'e2e8f0'}' fill-opacity="0.3"%3E%3Cpath d="M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z"/%3E%3C/g%3E%3C/g%3E%3C/svg%3E')
+      linear-gradient(135deg, ${isDark ? 'rgba(15, 23, 42, 0.9)' : 'rgba(255, 255, 255, 0.95)'} 0%, ${isDark ? 'rgba(30, 41, 59, 0.9)' : 'rgba(241, 245, 249, 0.95)'} 100%),
+      linear-gradient(45deg, ${isDark ? 'transparent 30%, rgba(59, 130, 246, 0.05) 50%, transparent 70%' : 'transparent 30%, rgba(59, 130, 246, 0.08) 50%, transparent 70%'}),
+      url('data:image/svg+xml,%3Csvg width="100" height="100" xmlns="http://www.w3.org/2000/svg"%3E%3Cdefs%3E%3ClinearGradient id="grad" x1="0%25" y1="0%25" x2="100%25" y2="100%25"%3E%3Cstop offset="0%25" style="stop-color:%23${isDark ? '3b82f6' : '3b82f6'};stop-opacity:0.1" /%3E%3Cstop offset="100%25" style="stop-color:%23${isDark ? '1e40af' : '1e40af'};stop-opacity:0.05" /%3E%3C/linearGradient%3E%3C/defs%3E%3Ccircle cx="50" cy="50" r="40" fill="url(%23grad)" stroke="%23${isDark ? '64748b' : 'cbd5e1'})" stroke-width="0.5" opacity="0.3"/%3E%3C/svg%3E')
     `,
-    backgroundSize: '100%, 60px 60px',
-    backgroundAttachment: 'fixed'
+    backgroundSize: '100%, 100%, 100px 100px',
+    backgroundAttachment: 'fixed',
+    backgroundColor: isDark ? '#0f172a' : '#ffffff'
   };
 
   return (
