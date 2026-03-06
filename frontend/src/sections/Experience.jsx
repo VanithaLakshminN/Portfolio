@@ -15,16 +15,16 @@ const Experience = () => {
           </div>
           <div className="bg-slate-800/50 p-6 rounded-lg">
             <h3 className="text-2xl font-semibold text-accent mb-2">Data Analytics Internship</h3>
-            <p className="text-slate-400 mb-4">Rooman Technologie (Ongoing)</p>
+            <p className="text-slate-400 mb-4">Rooman Technology (Ongoing)</p>
             <p className="text-slate-300">
               Currently working on data analytics projects, developing skills in data analysis, visualization, and business intelligence.
             </p>
           </div>
           <div className="bg-slate-800/50 p-6 rounded-lg">
-            <h3 className="text-2xl font-semibold text-accent mb-2">Full Stack Development Internship</h3>
+            <h3 className="text-2xl font-semibold text-accent mb-2">Full Stack Development with Java Internship</h3>
             <p className="text-slate-400 mb-4">TAP Academy (Ongoing)</p>
             <p className="text-slate-300">
-              Currently working on full stack web development projects, building end-to-end solutions using modern frontend and backend technologies.
+              Currently working on full stack web development projects using Java, building end-to-end solutions with modern backend and frontend technologies.
             </p>
           </div>
         </div>
