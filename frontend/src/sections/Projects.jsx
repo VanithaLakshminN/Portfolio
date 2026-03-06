@@ -17,6 +17,12 @@ const Projects = () => {
       desc: 'A modern, fully responsive personal portfolio featuring smooth scroll animations and a connected contact database.',
       tech: ['React', 'Vite', 'Tailwind CSS', 'Framer Motion'],
       github: 'https://github.com/VanithaLakshminN/MyPortfolio'
+    },
+    {
+      title: 'HeathCare Application',
+      desc: 'Built a digital telemedicine platform to connect rural families in Nabha with doctors, medicines, and health info via mobile or local centers.',
+      tech: [],
+      github: 'https://healthcare601.netlify.app/'
     }
   ];
 
