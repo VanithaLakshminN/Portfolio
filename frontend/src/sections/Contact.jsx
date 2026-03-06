@@ -35,7 +35,7 @@ const Contact = () => {
   return (
     <section id="contact" className="py-20 max-w-xl mx-auto text-center">
       <h2 className="text-3xl font-bold mb-4"><span className="text-accent">05.</span> Get In Touch</h2>
-      <p className="text-slate-400 mb-8">Currently looking for technical trainee roles. Drop a message!</p>
+      <p className="text-slate-400 mb-8">Get in Touch with me</p>
       <form onSubmit={handleSubmit} className="flex flex-col gap-4 text-left">
         <input 
           type="text" 
